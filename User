@@ -77,5 +77,21 @@ public class Main {
                         found = true;
                     }
                 }
-   
+   if (!found) System.out.println("No books found.");
+
+            } else if (c.equals("2")) {
+                System.out.println("All Books:");
+                for (String[] book : books) {
+                    System.out.println("  Title: " + book[0] + " | Status: " + book[1] + " | " + book[2]);
+                }
+
+            } else if (c.equals("3")) {
+                System.out.println("Logged out.");
+                break;
+            } else {
+                System.out.println("Invalid choice.");
+            }
+        }
+    }
+}
          
