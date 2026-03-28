@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class User {
 
     static HashMap<String, String> accounts = new HashMap<>();
 
