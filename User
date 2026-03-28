@@ -59,6 +59,23 @@ public class Main {
             }
         }
     }
+    static void searchMenu(Scanner sc) {
+        while (true) {
+            System.out.println("\n1. Search Books");
+            System.out.println("2. Show All Books");
+            System.out.println("3. Log Out");
+            System.out.print("Choice: ");
+            String c = sc.nextLine().trim();
 
+            if (c.equals("1")) {
+                System.out.print("Enter book title to search: ");
+                String query = sc.nextLine().trim().toLowerCase();
+                boolean found = false;
+                for (String[] book : books) {
+                    if (book[0].toLowerCase().contains(query)) {
+                        System.out.println("  Title: " + book[0] + " | Status: " + book[1] + " | " + book[2]);
+                        found = true;
+                    }
+                }
    
          
